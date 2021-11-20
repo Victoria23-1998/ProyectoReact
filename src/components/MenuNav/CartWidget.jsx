@@ -1,4 +1,4 @@
-import iconCart from '../img/cart.png';
+import iconCart from '../../img/carrito-de-compras.png'
 
 const IconCart =()=>{
     return(

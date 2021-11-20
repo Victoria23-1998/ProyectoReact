@@ -1,0 +1,34 @@
+.card{
+    .btn{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0rem ;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
+        padding-left:0.625rem ;
+        padding-right:0.625rem ;
+        padding-bottom: 8px;
+    }
+    p{
+        margin-bottom: 0rem;
+        color: #FF7E67;
+        
+    }
+    
+    .card-title{
+        font-family:'Open Sans';
+        font-weight: bold;
+        color:#07689F;
+        font-size: 1.2rem;
+    }
+    .card-text{
+        font-weight: bold;
+    }
+
+}
+.loading{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}

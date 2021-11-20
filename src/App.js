@@ -1,14 +1,18 @@
 
-import './App.css';
-import NavBar from './components/NavBar';
-import { ListContainer } from './container/ItemListContainer';
+import './style/App.scss';
+//import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import NavBar from './components/MenuNav/NavBar';
+import { ItemListContainer } from './container/ItemListContainer';
+import { DivCards } from './estilosComponents/cardStyled';
 function App() {
-
-  
+ 
   return (
     <>
+   
     <NavBar />
-    <ListContainer greeting="¡Bienvenido!" />
+    <DivCards>
+   < ItemListContainer />
+   </DivCards>
     </>
   );
 }
