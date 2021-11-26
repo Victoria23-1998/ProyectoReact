@@ -18,7 +18,7 @@
 {
     "id": "3",
     "image": "../imgPaquetes/Parque-Nacional-Morrocoy-Venezuela1.png",
-    "Title":"Paque Morrocoy",
+    "Title":"Parque Morrocoy",
     "price": "USD $5.000",
     "Category":"playa",
     "stock":"3"
@@ -42,7 +42,7 @@
 {
     "id": "6",
     "image": "../imgPaquetes/Parque-Nacional-Morrocoy-Venezuela1.png",
-    "Title":"Paque Morrocoy",
+    "Title":"Parque Morrocoy",
     "price": "USD $5.000",
     "Category":"playa"
 },
@@ -65,7 +65,7 @@
 {
     "id": "9",
     "image": "../imgPaquetes/Parque-Nacional-Morrocoy-Venezuela1.png",
-    "Title":"Paque Morrocoy",
+    "Title":"Parque Morrocoy",
     "price": "USD $5.000",
     "Category":"playa",
     "stock":"5"

@@ -22,7 +22,7 @@ export const ItemCount =({initial,stock,onAdd})=>{
                 
                 <button onClick={Sumar} className="sum">+</button>
                      {count}
-                <button onClick={Restar} className="sum">-</button>
+                <button onClick={Restar} className="res">-</button>
                 <button onClick={Agregar} className="agregar">Agregar al carrito</button>
             </div>
         </>

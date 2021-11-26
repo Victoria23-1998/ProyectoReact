@@ -9,7 +9,7 @@ export function onAdd(cant){
 export const ItemListContainer=()=>{
 
  const [loading, setLoading]= useState(false);
-const [products, setProducts] = useState([]);
+ const [products, setProducts] = useState([]);
 
  useEffect(() => {
   getProducts();
@@ -18,7 +18,7 @@ const [products, setProducts] = useState([]);
 
 
 //Consumo de datos con Fetch
-const getProducts = async () => {
+ const getProducts = async () => {
   try {
 
     
@@ -28,7 +28,7 @@ const getProducts = async () => {
       setProducts(data);
       setTimeout(()=>{
         setLoading(true);
-      },5000)
+      },2000)
       
      
 
@@ -36,20 +36,20 @@ const getProducts = async () => {
     console.log(error)
   }
 } 
-console.log(products)
+
 
 
 return (
     <>
-  {loading?
-  
-   <>
-   
-     <ItemList productos={products}/> 
-    
- </>
-  :
-    <ReactBoostrap.Spinner animation="grow" variant="info" className="loading" />}
+      {loading?
+
+    <>
+
+      <ItemList productos={products}/> 
+
+    </>
+      :
+      <ReactBoostrap.Spinner animation="grow" variant="info" className="loading" />}
     </>
   );
 }
