@@ -10,6 +10,7 @@ export const Item=({id, image,Title,price,Category,stock})=>{
   
     return(
       <>
+      
         <ItemCard className="card"  style={style}>
           <Link  to={`/detalle/${id}`}>
           <img src={image} className="card-img-top" alt={Title}/>

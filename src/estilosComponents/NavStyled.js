@@ -3,7 +3,7 @@ import styled from 'styled-components';
 //estilos de la barra de navegación
 
 let fontTitle = "'Syncopate',sans-serif";
-let color1 = "#07689F";
+let color1 = "#186e7d";
 let color2 = "#E9E7E7";
 export const A = styled.a`
     text-decoration:none;
@@ -31,4 +31,8 @@ export const Nav = styled.nav`
     margin-top:0px;
     padding-top:0.3125rem;
     padding-bottom:0.3125rem;
+    
+    width:100%;
+    z-index:30 ;
+    top:0;
 `;

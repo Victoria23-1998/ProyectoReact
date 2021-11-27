@@ -1,0 +1,14 @@
+.color{
+    margin-right: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.color:focus{
+    color: #07689F !important;
+   
+}
+
+.active{
+    background-color: rgb(117, 117, 117);
+    border-radius: 10px;
+}

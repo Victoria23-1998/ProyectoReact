@@ -1,0 +1,14 @@
+.flex{
+  display: flex;
+   flex-direction: row !important;
+   flex-wrap: wrap;
+}
+
+.color{
+    color: #000 !important;
+    font-family: 'Syncopate';
+    font-size: 0.8rem;
+}
+.ff{
+    margin-top: 60px;
+}
