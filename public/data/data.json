@@ -1,7 +1,7 @@
 [
 {
     "id": "1",
-    "image": "../imgPaquetes/mochima.png",
+    "image": "/imgPaquetes/mochima.png",
     "Title":"Parque Nacional Mochima",
     "price": "USD $4.000",
     "Category":"playa",
@@ -9,7 +9,7 @@
 },
 {
     "id": "2",
-    "image": "../imgPaquetes/margarita.png",
+    "image": "/imgPaquetes/margarita.png",
     "Title":"Isla Margarita",
     "price": "USD $4.500",
     "Category":"playa",
@@ -17,7 +17,7 @@
 },
 {
     "id": "3",
-    "image": "../imgPaquetes/Parque-Nacional-Morrocoy-Venezuela1.png",
+    "image": "/imgPaquetes/Parque-Nacional-Morrocoy-Venezuela1.png",
     "Title":"Parque Morrocoy",
     "price": "USD $5.000",
     "Category":"playa",
@@ -25,7 +25,7 @@
 },
 {
     "id": "4",
-    "image": "../imgPaquetes/cerro_autana_perfil 1.png",
+    "image": "/imgPaquetes/cerro_autana_perfil 1.png",
     "Title":"Tepuy Autana",
     "price": "USD $6.000",
     "Category":"montaña",
@@ -33,7 +33,7 @@
 },
 {
     "id": "5",
-    "image": "../imgPaquetes/telefericoturismo_980_avn 1.png",
+    "image": "/imgPaquetes/telefericoturismo_980_avn 1.png",
     "Title":"Teleférico Avila",
     "price": "USD $4.500",
     "Category":"montaña",
@@ -41,14 +41,14 @@
 },
 {
     "id": "6",
-    "image": "../imgPaquetes/turismo-Venezuela11 1.png",
+    "image": "/imgPaquetes/turismo-Venezuela11 1.png",
     "Title":"Pico Bolivar",
     "price": "USD $5.000",
     "Category":"montaña"
 },
 {
     "id": "7",
-    "image": "../imgPaquetes/La-Gran-Sabana-Waku-13 1.png",
+    "image": "/imgPaquetes/La-Gran-Sabana-Waku-13 1.png",
     "Title":"La gran Sabana",
     "price": "USD $6.000",
     "Category":"selva",
@@ -56,7 +56,7 @@
 },
 {
     "id": "8",
-    "image": "../imgPaquetes/Parque Canaima 1.png",
+    "image": "/imgPaquetes/Parque Canaima 1.png",
     "Title":"Parque Nacional Canaima",
     "price": "USD $6.500",
     "Category":"selva",
@@ -64,7 +64,7 @@
 },
 {
     "id": "9",
-    "image": "../imgPaquetes/salto-del-angel 1.png",
+    "image": "/imgPaquetes/salto-del-angel 1.png",
     "Title":"Salto Ángel",
     "price": "USD $7.000",
     "Category":"selva",
@@ -72,7 +72,7 @@
 },
 {
     "id": "10",
-    "image": "../imgPaquetes/Enrique-Romero-Llanos23-1024x768 1.png",
+    "image": "/imgPaquetes/Enrique-Romero-Llanos23-1024x768 1.png",
     "Title":"Los Llanos",
     "price": "USD $5.000",
     "Category":"llano",
@@ -80,7 +80,7 @@
 },
 {
     "id": "11",
-    "image": "../imgPaquetes/hatoelcedral 1.png",
+    "image": "/imgPaquetes/hatoelcedral 1.png",
     "Title":"Los Llanos",
     "price": "USD $5.000",
     "Category":"llano",
@@ -88,7 +88,7 @@
 },
 {
     "id": "12",
-    "image": "../imgPaquetes/mochima.png",
+    "image": "/imgPaquetes/mochima.png",
     "Title":"Parque Nacional Mochima",
     "price": "USD $4.000",
     "Category":"playa",
@@ -96,7 +96,7 @@
 },
 {
     "id": "13",
-    "image": "../imgPaquetes/margarita.png",
+    "image": "/imgPaquetes/margarita.png",
     "Title":"Isla Margarita",
     "price": "USD $4.500",
     "Category":"playa",
@@ -104,7 +104,7 @@
 },
 {
     "id": "14",
-    "image": "../imgPaquetes/Parque-Nacional-Morrocoy-Venezuela1.png",
+    "image": "/imgPaquetes/Parque-Nacional-Morrocoy-Venezuela1.png",
     "Title":"Parque Morrocoy",
     "price": "USD $5.000",
     "Category":"playa",
@@ -112,7 +112,7 @@
 },
 {
     "id": "15",
-    "image": "../imgPaquetes/Enrique-Romero-Llanos23-1024x768 1.png",
+    "image": "/imgPaquetes/Enrique-Romero-Llanos23-1024x768 1.png",
     "Title":"Los Llanos",
     "price": "USD $5.000",
     "Category":"llano",
@@ -120,7 +120,7 @@
 },
 {
     "id": "16",
-    "image": "../imgPaquetes/hatoelcedral 1.png",
+    "image": "/imgPaquetes/hatoelcedral 1.png",
     "Title":"Los Llanos",
     "price": "USD $5.000",
     "Category":"llano",
@@ -128,7 +128,7 @@
 },
 {
     "id": "17",
-    "image": "../imgPaquetes/Enrique-Romero-Llanos23-1024x768 1.png",
+    "image": "/imgPaquetes/Enrique-Romero-Llanos23-1024x768 1.png",
     "Title":"Los Llanos",
     "price": "USD $5.000",
     "Category":"llano",
@@ -136,7 +136,7 @@
 },
 {
     "id": "18",
-    "image": "../imgPaquetes/hatoelcedral 1.png",
+    "image": "/imgPaquetes/hatoelcedral 1.png",
     "Title":"Los Llanos",
     "price": "USD $5.000",
     "Category":"llano",
@@ -144,7 +144,7 @@
 },
 {
     "id": "19",
-    "image": "../imgPaquetes/cerro_autana_perfil 1.png",
+    "image": "/imgPaquetes/cerro_autana_perfil 1.png",
     "Title":"Tepuy Autana",
     "price": "USD $6.000",
     "Category":"montaña",
@@ -152,7 +152,7 @@
 },
 {
     "id": "20",
-    "image": "../imgPaquetes/telefericoturismo_980_avn 1.png",
+    "image": "/imgPaquetes/telefericoturismo_980_avn 1.png",
     "Title":"Teleférico Avila",
     "price": "USD $4.500",
     "Category":"montaña",
@@ -160,7 +160,7 @@
 },
 {
     "id": "21",
-    "image": "../imgPaquetes/turismo-Venezuela11 1.png",
+    "image": "/imgPaquetes/turismo-Venezuela11 1.png",
     "Title":"Pico Bolivar",
     "price": "USD $5.000",
     "Category":"montaña"

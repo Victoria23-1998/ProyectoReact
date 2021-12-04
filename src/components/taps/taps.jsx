@@ -1,7 +1,7 @@
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom'
 import '../taps/taps.css'
-import { NavLink } from 'react-bootstrap'
+
 export const Tabs =({categoria})=>{
 
     return(

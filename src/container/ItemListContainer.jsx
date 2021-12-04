@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import { ItemList } from "../components/Products/ItemList";
 //import { Loading } from "../components/loading/loading";
 import { useParams } from "react-router";
-import Nav from 'react-bootstrap/Nav'
+
 import * as ReactBoostrap from 'react-bootstrap';
 import { Tabs } from "../components/taps/taps";
 import '../container/list.css'
@@ -19,8 +19,15 @@ export const ItemListContainer=()=>{
 
  const {itemCategoria}= useParams();
  useEffect(() => {
+      
+ 
   getProducts();
-   // eslint-disable-next-line
+   
+   const timeoutID= setTimeout(()=>{
+    setLoading(true);
+  },2000)
+  return () => window.clearTimeout(timeoutID )
+  // eslint-disable-next-line
 },[itemCategoria])
 
 //Consumo de datos con Fetch
@@ -32,11 +39,7 @@ export const ItemListContainer=()=>{
       let respuesta = await fetch ('../../data/data.json');
       let data= await respuesta.json();
       setProducts(data.filter(producto => producto.Category === itemCategoria ));
-      
-      setTimeout(()=>{
-        setLoading(true);
-      },2000)
-      
+   
      
 
   } catch (error) {

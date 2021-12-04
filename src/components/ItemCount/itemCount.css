@@ -29,3 +29,10 @@ margin-left: 5px;
     color: whitesmoke;
     margin-left: 30px;
 }
+.terminar{
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: rgb(17, 17, 17);
+    margin-left: 30px;
+    border: none;
+}

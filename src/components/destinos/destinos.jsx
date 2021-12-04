@@ -1,5 +1,5 @@
 
-import { Tabs } from "../taps/taps"
+
 
 export const Destinos =()=>{
     return(

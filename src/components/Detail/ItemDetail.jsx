@@ -1,6 +1,11 @@
 import { ItemCount } from "../ItemCount/ItemCount"
 import { onAdd } from "../../container/ItemListContainer";
+//import { useContext } from "react";
+//import { CartContext } from "../../context/cart.context";
 export const ItemDetail =({item})=>{
+    
+    /*const {cart} = useContext(CartContext)
+    console.log(cart)*/
     return(
         <section className="principal">
             <div className="contentImg">
@@ -26,7 +31,9 @@ export const ItemDetail =({item})=>{
                         <p>Hoteles PSI + COSTA</p>
                         <p>Hoteles CEREZA + COSTA</p>
                     </div>
-                    <ItemCount initial={1} stock={parseInt(item.stock)} onAdd={onAdd}/>
+                    
+                    <ItemCount initial={1} stock={parseInt(item.stock)} onAdd={onAdd} product={item}/>
+                    
                 </div> 
             </div>
 

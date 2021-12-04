@@ -7,15 +7,7 @@ export const ItemList =(props)=>{
        
         props.productos.map(product => (
             
-            < Item
-            key={product.id}
-            id={product.id}
-            image={product.image}
-            Title={product.Title}
-            price={product.price}
-            Category={product.Category}
-            stock={product.stock}
-            />
+            < Item key={product.id} item={{...product}}/>
      
         ))
        

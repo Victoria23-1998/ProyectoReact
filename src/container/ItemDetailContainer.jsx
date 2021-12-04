@@ -12,34 +12,24 @@ export const ItemDetailContainer=()=>{
     
     useEffect(()=>{
         getProductsList()
+        const timeoutID= setTimeout(()=>{
+          setLoading(true);
+        },2000)
+        return () => window.clearTimeout(timeoutID )
         // eslint-disable-next-line
     },[itemId])
+
     const getProductsList = async () => {
         try {
-      
-          
-            
-            let respuesta = await fetch ('../../data/data.json');
+           let respuesta = await fetch ('../../data/data.json');
             let data= await respuesta.json();
             setProductInd(data.find(producto=> producto.id === itemId))
-            setTimeout(()=>{
-                setLoading(true);
-              },2000)
+           
         } catch (error) {
           console.log(error)
         }
       } 
-      
-   
-    
-    console.log(productIndividual)
-
-    //se ejecuta cada vez que la url cambia
- 
-   
-      
-   
-
+  
     return(
         <>
         { loading ?

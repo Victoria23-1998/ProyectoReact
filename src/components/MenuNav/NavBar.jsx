@@ -16,7 +16,7 @@ const NavBar =()=>{
                
                 <Li><Link to='contacto' className="link">CONTACTO</Link></Li>
                 <IconSesion />
-                < IconCart />
+              < IconCart/>
            </Ul>
           
         </Nav>
