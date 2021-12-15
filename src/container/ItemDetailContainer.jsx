@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { ItemDetail } from "../components/Detail/ItemDetail";
-
+import getFirestore from "../firebase/firebaseConfig";
 import * as ReactBoostrap from 'react-bootstrap';
 
 export const ItemDetailContainer=()=>{
@@ -11,7 +11,11 @@ export const ItemDetailContainer=()=>{
     const {itemId}= useParams();
     
     useEffect(()=>{
-        getProductsList()
+      const db = getFirestore()
+      const dbQuery= db.collection('productos').doc(itemId)
+      dbQuery.get()
+      .then(data => setProductInd({id: data.id,...data.data()}))
+    
         const timeoutID= setTimeout(()=>{
           setLoading(true);
         },2000)
@@ -19,16 +23,7 @@ export const ItemDetailContainer=()=>{
         // eslint-disable-next-line
     },[itemId])
 
-    const getProductsList = async () => {
-        try {
-           let respuesta = await fetch ('../../data/data.json');
-            let data= await respuesta.json();
-            setProductInd(data.find(producto=> producto.id === itemId))
-           
-        } catch (error) {
-          console.log(error)
-        }
-      } 
+  
   
     return(
         <>

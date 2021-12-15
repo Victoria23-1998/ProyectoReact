@@ -6,10 +6,11 @@ import { useParams } from "react-router";
 import * as ReactBoostrap from 'react-bootstrap';
 import { Tabs } from "../components/taps/taps";
 import '../container/list.css'
+import getFirestore from "../firebase/firebaseConfig";
+
 export function onAdd(cant){
   console.log(cant)
 }
-
 export const ItemListContainer=()=>{
 
 
@@ -19,10 +20,11 @@ export const ItemListContainer=()=>{
 
  const {itemCategoria}= useParams();
  useEffect(() => {
-      
- 
-  getProducts();
-   
+  const db = getFirestore()
+  const dbQuery= db.collection('productos').where('category', '==', itemCategoria)
+  dbQuery.get()
+  .then(data => setProducts(data.docs.map(item =>({id:item.id,...item.data()}))))
+
    const timeoutID= setTimeout(()=>{
     setLoading(true);
   },2000)
@@ -31,21 +33,9 @@ export const ItemListContainer=()=>{
 },[itemCategoria])
 
 //Consumo de datos con Fetch
- const getProducts = async () => {
-  try {
-
-    
-      
-      let respuesta = await fetch ('../../data/data.json');
-      let data= await respuesta.json();
-      setProducts(data.filter(producto => producto.Category === itemCategoria ));
-   
-     
-
-  } catch (error) {
-    console.log(error)
-  }
-} 
+ 
+  
+ 
 return (
    
   <>

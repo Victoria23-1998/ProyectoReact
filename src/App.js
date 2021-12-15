@@ -28,6 +28,7 @@ function App() {
           <Route exact path= 'contacto' element={<Contacto/>} />  
           <Route exact path= 'carrito' element={<Cart/>} />  
           <Route exact path= '/detalle/:id/carrito' element={<Cart/>} />  
+          <Route exact path= 'homeItems' element={<ItemDetailContainer/> } />  
        
         </Routes>
       </CartProvider>   

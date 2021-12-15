@@ -1,0 +1,15 @@
+.content-icon-cart{
+    display: flex;
+   
+}
+.iconCart{
+    margin-right: 10px;
+}
+.cant{
+    background-color:#FF7E67 ;
+    border-radius: 50%;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 1rem;
+    
+}

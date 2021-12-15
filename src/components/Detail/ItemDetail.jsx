@@ -1,18 +1,87 @@
-import { ItemCount } from "../ItemCount/ItemCount"
-import { onAdd } from "../../container/ItemListContainer";
-//import { useContext } from "react";
-//import { CartContext } from "../../context/cart.context";
+
+import { useState } from "react";
+import { useContext } from "react";
+import { CartContext } from "../../context/cart.context";
+import { Link } from "react-router-dom";
+import './detal.css'
 export const ItemDetail =({item})=>{
     
-    /*const {cart} = useContext(CartContext)
-    console.log(cart)*/
+    const [count, setCount] = useState(1)
+    const {addProduct}= useContext(CartContext)
+    const [buttonType,setButton]= useState('button agregar');
+    const [subTotal,setSubTotal]=useState(item.price)
+    let cantidad=0;
+
+    let productToCart={
+        id: "",
+        image: "",
+        Title:"",
+        price: "",
+        Category:"",
+        stock:"",
+        cantidad:0,
+        subTotal:0
+    }
+    
+    function sumar(){
+        cantidad= count+1;
+        if(cantidad< item.stock){
+            setCount(cantidad)
+            
+            setSubTotal(parseInt(item.price) * (cantidad))
+           
+        }
+    }
+    function restar(){
+        cantidad= count-1;
+        if(cantidad <= 1){
+            setCount(cantidad)
+            setSubTotal(parseInt(item.price) * (cantidad))
+            
+        }
+    }
+
+    const Agregar=()=>{
+        productToCart={
+            id: item.id,
+            image:item.image ,
+            title: item.title,
+            price: item.price ,
+            cantidad:count,
+            subTotal:subTotal
+        }
+       addProduct(productToCart)
+    } 
+    function ambasFunciones(){
+        Agregar()
+        cambiar()
+    }
+    const cambiar=()=>{
+        return(
+           
+           setButton('button terminar')
+        )
+    }
+    const ButtonTerminar=()=>{
+        return(
+           <Link to={`/detalle/${item.id}/carrito`}> <button className="terminar" onClick={()=> console.log('hola')}>Terminar Compra</button></Link>
+        )
+    }
+    const ButtonAgregar=({funciones})=>{
+        
+        
+         return(<button onClick={()=>{funciones()}} className="agregar">Agregar al carrito</button>)
+        
+    }
+    
+
     return(
         <section className="principal">
             <div className="contentImg">
                <div className="cImg">
                    <img src={item.image} alt="" />
-                   <h3>{item.Title}</h3>
-                   <h3>Precio por persona:{item.price}</h3>
+                   <h3>{item.title}</h3>
+                   <h3>Precio por persona:$USD{subTotal}.00</h3>
                    
                 </div> 
                 <div className="contentProg">
@@ -31,10 +100,25 @@ export const ItemDetail =({item})=>{
                         <p>Hoteles PSI + COSTA</p>
                         <p>Hoteles CEREZA + COSTA</p>
                     </div>
-                    
-                    <ItemCount initial={1} stock={parseInt(item.stock)} onAdd={onAdd} product={item}/>
-                    
-                </div> 
+                
+                    <div className="count">
+                        <div className="contSumRest">
+                            <button onClick={sumar} className="sum" >+</button>
+                            {count}
+                            <button onClick={restar} className="res" >-</button>
+                        </div>
+
+                        {
+
+                            buttonType === 'button agregar' ?
+                                <ButtonAgregar funciones={ambasFunciones} />
+                                :
+                                <ButtonTerminar />
+
+                        }
+                    </div>
+
+                </div>
             </div>
 
                 <div className="contentDetalles">

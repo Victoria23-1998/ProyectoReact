@@ -1,0 +1,168 @@
+.cardCart{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 1px 1px 6px 5px #D9D9D9;
+    box-shadow: 1px 1px 6px 5px #D9D9D9;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius:10px;
+    padding-left:20px ;
+    padding-right:20px ;
+}
+.imgCart{
+    width: 100px;
+    border-radius:10px;
+}
+.contentTotal{
+    background-color: rgba(180, 179, 179, 0.815);
+    border-radius: 10px;
+    height: auto;
+    width: 450px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px   
+}
+.contentGen{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contentCom{
+    width: 100px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    img{
+        width: 20px;
+       cursor: pointer;
+        
+    }
+}
+.contentCom p{
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 0px;
+   
+}
+.count {
+    margin-left: 0px !important;
+    
+}
+.title{
+    font-family:'Open Sans';
+    font-weight: bold;
+    color:#07689F; 
+}
+.contSub{
+    display: flex;
+    align-items: center;
+    span{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+.contTot{
+    display: flex;
+    align-items: center;
+    span{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+.contentSumTot{
+    display: flex;
+    justify-content: space-between;
+}
+.contentSub{
+    display: flex;
+    justify-content: space-between;
+}
+.btnComprar{
+    width: 100%;
+    margin-top: 60px;
+}
+.btnC{
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  
+}
+.cCart{
+    display: flex;
+    flex-direction: column !important;
+}
+.vacio{
+    margin-left: 20px;
+   
+}
+.cart-vacio{
+    h2{
+        margin-left: 20px;
+    }
+}
+.btnC1{
+    width: 100%;
+}
+.sum{
+    background-color: none;
+    border: rgb(100, 133, 243);
+}
+.agregar{
+background-color: none;
+border:none;
+margin-left: 5px;
+}
+.count{
+    margin-left:120px;
+}
+.sum{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.res{
+    border-radius: 50%;
+    background-color: none;
+    border: rgb(100, 133, 243);
+    margin-left: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.agregar{
+    border-radius: 20px;
+    background-color: #FF7E67;
+    color: whitesmoke;
+    margin-left: 30px;
+}
+.terminar{
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: rgb(17, 17, 17);
+    margin-left: 30px;
+    border: none;
+}
+.contSumRest{
+    background-color:#07689F ;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    color: whitesmoke;
+}
+
+
+.sum{
+    border-radius: 5px;
+}
+.res{
+    border-radius: 5px;
+}
+.count{
+    display: flex;
+   justify-content: center;
+}
