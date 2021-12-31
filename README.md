@@ -2,6 +2,10 @@ Ver DEMO aqui: https://travelvenezuela.netlify.app/
 
 VIDEO DE LA NAVEGABILIDAD:
 
+
+https://user-images.githubusercontent.com/85801314/147798346-91d02f09-5470-4773-868e-e65c65ace6be.mp4
+
+
 # Comenzando 🚀
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local.
 
