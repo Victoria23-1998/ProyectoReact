@@ -97,5 +97,10 @@ main h3{
     font-family: 'Syncopate';
     font-size: 1.5rem;
     color: #9eb561;
-    margin-top: 40px;
+    margin-top: 60px;
+    
+}
+.content-home{
+    margin-left: 60px;
+   
 }

@@ -15,7 +15,7 @@ export const ItemListContainer=()=>{
 
 
  
- const [loading, setLoading]= useState(false);
+ const [loading, setLoading]= useState(true);
  const [products, setProducts] = useState([]);
 
  const {itemCategoria}= useParams();
@@ -23,12 +23,15 @@ export const ItemListContainer=()=>{
   const db = getFirestore()
   const dbQuery= db.collection('productos').where('category', '==', itemCategoria)
   dbQuery.get()
-  .then(data => setProducts(data.docs.map(item =>({id:item.id,...item.data()}))))
+  .then(data => {
+    setProducts(data.docs.map(item =>({id:item.id,...item.data()})))
+    
+    setLoading(false)
+  }
+  )
 
-   const timeoutID= setTimeout(()=>{
-    setLoading(true);
-  },2000)
-  return () => window.clearTimeout(timeoutID )
+  setLoading(true)
+  //return () => window.clearTimeout(timeoutID )
   // eslint-disable-next-line
 },[itemCategoria])
 
@@ -44,16 +47,13 @@ return (
     
     
     {loading?
-
-  <>
-  
-  <div className="flex">
-
-    <ItemList productos={products}/> 
-  </div>
-  </>
-    :
-    <ReactBoostrap.Spinner animation="grow" variant="info" className="loading" />}
+      <ReactBoostrap.Spinner animation="grow" variant="info" className="loading" />
+     :
+    
+     <div className="flex">
+       <ItemList productos={products}/> 
+      </div>
+    }
   </>
 );
 } 
