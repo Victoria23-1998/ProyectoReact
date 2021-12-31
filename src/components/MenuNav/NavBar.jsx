@@ -12,11 +12,9 @@ const NavBar =()=>{
               
             <Li><Link to='/' ><img  src={logo} className="imgLogo" alt="logo" /></Link></Li>
             <Li><Link to='/' className="link">INICIO</Link></Li>
-            <Li><Link to='destinos' className="link">DESTINOS</Link></Li>
-               
-                <Li><Link to='contacto' className="link">CONTACTO</Link></Li>
-                <IconSesion />
-              < IconCart/>
+            <Li><Link to='contacto' className="link">CONTACTO</Link></Li>
+            <IconSesion />
+            <IconCart/>
            </Ul>
           
         </Nav>

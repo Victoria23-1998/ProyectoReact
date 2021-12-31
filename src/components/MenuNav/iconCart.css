@@ -13,3 +13,22 @@
     font-size: 1rem;
     
 }
+.content-login{
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+   
+}
+.text-login{
+    margin-top: 12px;
+}
+.text-login:hover{
+ color:#FF7E67 ;
+}
+.btn-cerrar{
+    width: 140px;
+    background-color:#FF7E67 !important ;
+    border: #FF7E67 !important;
+}

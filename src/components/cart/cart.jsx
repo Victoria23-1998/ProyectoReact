@@ -1,28 +1,24 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/cart.context"
-
 import { TotalCom } from "./totalCompra";
 import Button from 'react-bootstrap/Button'
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import './cart.scss';
 
 export const Cart =()=>{
 
-    const {cart,deleteItem,vaciarCart}= useContext(CartContext);
+    const {cart,deleteItem,vaciarCart,getLocalStorageCart}= useContext(CartContext);
     
-   
-    
-    // variable para ocultar un boton en el carrito
-    
-    //variable para actulizar precio
-    //const itemsPrice = cart.reduce((a,c) => a +c.price * c.cantidad,0)
-  
-
+  useEffect(() => {
+    getLocalStorageCart()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
+ 
     return(
         <>
-      
-       
-            <Link to='/categoria/playa'> <Button variant="dark" className="btnC">Seguir Comprando</Button></Link>
+        <div className="content-carrito">
+           <Link to='/categoria/playa'> <Button variant="dark" className="btnC">Seguir Comprando</Button></Link>
 
             <div className="cart-vacio">{cart.length === 0 && <h2>Carrito Vacio :c</h2>}</div>
                 
@@ -62,7 +58,8 @@ export const Cart =()=>{
             </div>
             
             
-            <Button variant="dark" className="btnC" onClick={()=>vaciarCart()}>Vaciar Carrito</Button>
+           {cart.length !==0 && <Button variant="dark" className="btnC" onClick={()=>vaciarCart()}>Vaciar Carrito</Button> } 
+        </div>
         </>
     )
       

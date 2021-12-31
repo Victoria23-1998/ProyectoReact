@@ -64,7 +64,7 @@ export const ItemDetail =({item})=>{
     }
     const ButtonTerminar=()=>{
         return(
-           <Link to={`/detalle/${item.id}/carrito`}> <button className="terminar" onClick={()=> console.log('hola')}>Terminar Compra</button></Link>
+           <Link to={`/detalle/${item.id}/carrito`}> <button className="terminar" >Terminar Compra</button></Link>
         )
     }
     const ButtonAgregar=({funciones})=>{

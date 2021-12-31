@@ -5,14 +5,18 @@ import NavBar from './components/MenuNav/NavBar';
 import { ItemListContainer } from './container/ItemListContainer';
 import { ItemDetailContainer } from './container/ItemDetailContainer';
 import { Home } from './components/home/home';
-import { Destinos } from './components/destinos/destinos';
 import { Contacto } from './components/contacto/contacto';
 import { CartProvider } from './context/cart.context';
 import { Cart } from './components/cart/cart';
+
+import { LoginContainer } from './container/login/login';
+import { LoginProvider } from './context/login.context';
+
 function App() {
  
   return (
     <>
+    <LoginProvider>
     <CartProvider>
         <NavBar />
        
@@ -24,14 +28,15 @@ function App() {
        
           <Route exact path= 'detalle/:itemId' element={<ItemDetailContainer/> }/>
           <Route exact path= '/' element={<Home/>} />  
-          <Route exact path= 'destinos' element={<Destinos/>} />  
           <Route exact path= 'contacto' element={<Contacto/>} />  
           <Route exact path= 'carrito' element={<Cart/>} />  
           <Route exact path= '/detalle/:id/carrito' element={<Cart/>} />  
-          <Route exact path= 'homeItems' element={<ItemDetailContainer/> } />  
+          
+          <Route exact path= 'login' element={<LoginContainer/> } /> 
        
         </Routes>
-      </CartProvider>   
+      </CartProvider>  
+    </LoginProvider> 
     </>
   );
 }

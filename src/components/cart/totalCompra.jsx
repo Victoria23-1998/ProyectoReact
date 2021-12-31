@@ -1,8 +1,11 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
+
 import { useContext } from 'react'
 import { CartContext } from '../../context/cart.context'
 import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom'
+import { Example } from './modal'
 import './cart.scss'
+
 export const TotalCom=()=>{
 const {cart,PriceTot }= useContext(CartContext)
 let priceTot= PriceTot()
@@ -24,7 +27,8 @@ let priceTot= PriceTot()
                     <h3 className="precioTot">$USD{priceTot}.00</h3>
                 </div>
             </div>
-          <Button variant="dark" className="btnC1">Comprar</Button>
+          
+          <Example/>
           </div>
         )}
           
